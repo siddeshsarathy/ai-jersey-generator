@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import base64
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 import io
