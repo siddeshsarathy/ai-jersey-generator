@@ -95,18 +95,18 @@ if generate_jersey_option:
         temp_sponsor,
         sleeve_design
     )
-    st.image(generated_jersey, caption="Generated Jersey Design", use_column_width=True)
+    st.image(generated_jersey, caption="Generated Jersey Design", use_container_width=True)
 
 if generate_shorts_option:
     generated_shorts = generate_shorts(
         tuple(int(color1[i:i+2], 16) for i in (1, 3, 5)),
         tuple(int(color2[i:i+2], 16) for i in (1, 3, 5))
     )
-    st.image(generated_shorts, caption="Generated Shorts Design", use_column_width=True)
+    st.image(generated_shorts, caption="Generated Shorts Design", use_container_width=True)
 
 if generate_stockings_option:
     generated_stockings = generate_stockings(
         tuple(int(color1[i:i+2], 16) for i in (1, 3, 5)),
         tuple(int(color2[i:i+2], 16) for i in (1, 3, 5))
     )
-    st.image(generated_stockings, caption="Generated Stockings Design", use_column_width=True)
+    st.image(generated_stockings, caption="Generated Stockings Design", use_container_width=True)
